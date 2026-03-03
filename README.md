@@ -20,4 +20,4 @@ Modern lead-generation website for **Spiritel** — perimeter security solutions
 - index.html → homepage
 - assets/ → css, js, images
 
-Work in progress — built iteratively with Claude Code.
+Work in progress — built iteratively with Claude Code.# securetest
