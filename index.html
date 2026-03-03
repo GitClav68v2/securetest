@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spiritel — Professional perimeter security for small and medium businesses. Open hardware, your monitoring choice, vetted installer network. No lock-in.">
+  <title>Spiritel — Your Perimeter. Your Rules.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="Spiritel — home">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M14 2L3 6.5v8c0 7.5 11 13 11 13s11-5.5 11-13v-8L14 2z" stroke="#06B6D4" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M9.5 14l3 3 6-6" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">SPIRITEL</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#why" class="nav-link">Why Spiritel</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#quote" class="nav-cta btn btn-primary btn--sm">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-container">
+
+        <div class="hero-content reveal-hero">
+          <div class="hero-badge">Perimeter Security for SMBs</div>
+          <h1 class="hero-headline">Your Perimeter.<br>Your Rules.</h1>
+          <p class="hero-sub">Spiritel designs and coordinates professional perimeter security for small and mid-size businesses — with the freedom to choose your own cameras, sensors, and monitoring provider.</p>
+          <div class="hero-ctas">
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+            <a href="#how-it-works" class="btn btn-ghost">See How It Works</a>
+          </div>
+          <ul class="hero-trust" role="list">
+            <li>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                <circle cx="8.5" cy="8.5" r="7.5" stroke="#06B6D4" stroke-width="1.5"/>
+                <path d="M5.5 8.5l2.5 2.5 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              No proprietary hardware lock-in
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                <circle cx="8.5" cy="8.5" r="7.5" stroke="#06B6D4" stroke-width="1.5"/>
+                <path d="M5.5 8.5l2.5 2.5 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Vetted professional installers nationwide
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                <circle cx="8.5" cy="8.5" r="7.5" stroke="#06B6D4" stroke-width="1.5"/>
+                <path d="M5.5 8.5l2.5 2.5 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              You choose your monitoring provider
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal-hero reveal-hero--delayed" aria-hidden="true">
+          <svg class="perimeter-svg" viewBox="0 0 400 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Perimeter security diagram">
+            <!-- Outer perimeter dashed border -->
+            <rect x="50" y="40" width="300" height="260" rx="6" stroke="#1E3A5F" stroke-width="1.5" stroke-dasharray="10 5"/>
+            <!-- Grid lines -->
+            <line x1="50" y1="170" x2="350" y2="170" stroke="#1E3A5F" stroke-width="0.75" stroke-dasharray="4 6"/>
+            <line x1="200" y1="40" x2="200" y2="300" stroke="#1E3A5F" stroke-width="0.75" stroke-dasharray="4 6"/>
+
+            <!-- Corner camera — top left -->
+            <g transform="translate(32, 22)">
+              <circle cx="18" cy="18" r="16" fill="#0D1A2E" stroke="#2563EB" stroke-width="1.5"/>
+              <rect x="10" y="13" width="10" height="8" rx="1.5" stroke="#06B6D4" stroke-width="1.2"/>
+              <path d="M20 15l5-2.5v9L20 19" stroke="#06B6D4" stroke-width="1.2" stroke-linejoin="round"/>
+              <circle cx="15" cy="17" r="1.5" fill="#06B6D4" opacity="0.8"/>
+            </g>
+
+            <!-- Corner camera — top right -->
+            <g transform="translate(318, 22)">
+              <circle cx="18" cy="18" r="16" fill="#0D1A2E" stroke="#2563EB" stroke-width="1.5"/>
+              <rect x="10" y="13" width="10" height="8" rx="1.5" stroke="#06B6D4" stroke-width="1.2"/>
+              <path d="M20 15l5-2.5v9L20 19" stroke="#06B6D4" stroke-width="1.2" stroke-linejoin="round"/>
+              <circle cx="15" cy="17" r="1.5" fill="#06B6D4" opacity="0.8"/>
+            </g>
+
+            <!-- Corner camera — bottom left -->
+            <g transform="translate(32, 262)">
+              <circle cx="18" cy="18" r="16" fill="#0D1A2E" stroke="#2563EB" stroke-width="1.5"/>
+              <rect x="10" y="13" width="10" height="8" rx="1.5" stroke="#06B6D4" stroke-width="1.2"/>
+              <path d="M20 15l5-2.5v9L20 19" stroke="#06B6D4" stroke-width="1.2" stroke-linejoin="round"/>
+              <circle cx="15" cy="17" r="1.5" fill="#06B6D4" opacity="0.8"/>
+            </g>
+
+            <!-- Corner camera — bottom right -->
+            <g transform="translate(318, 262)">
+              <circle cx="18" cy="18" r="16" fill="#0D1A2E" stroke="#2563EB" stroke-width="1.5"/>
+              <rect x="10" y="13" width="10" height="8" rx="1.5" stroke="#06B6D4" stroke-width="1.2"/>
+              <path d="M20 15l5-2.5v9L20 19" stroke="#06B6D4" stroke-width="1.2" stroke-linejoin="round"/>
+              <circle cx="15" cy="17" r="1.5" fill="#06B6D4" opacity="0.8"/>
+            </g>
+
+            <!-- Motion sensor — mid left -->
+            <g transform="translate(32, 152)">
+              <circle cx="18" cy="18" r="16" fill="#0D1A2E" stroke="#2563EB" stroke-width="1.5"/>
+              <path d="M13 11c2.5-2.5 7.5-2.5 10 0" stroke="#06B6D4" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M11 8.5c3.5-3.5 11-3.5 14.5 0" stroke="#06B6D4" stroke-width="1" stroke-linecap="round" opacity="0.45"/>
+              <circle cx="18" cy="21" r="3" fill="#06B6D4" opacity="0.9"/>
+            </g>
+
+            <!-- Gate — bottom center -->
+            <g transform="translate(173, 284)">
+              <rect x="0" y="0" width="54" height="22" rx="3" stroke="#2563EB" stroke-width="1.5" fill="#0D1A2E"/>
+              <line x1="27" y1="0" x2="27" y2="22" stroke="#2563EB" stroke-width="1" stroke-dasharray="3 2"/>
+              <circle cx="19" cy="11" r="2.5" fill="#06B6D4"/>
+              <circle cx="35" cy="11" r="2.5" fill="#06B6D4"/>
+            </g>
+
+            <!-- Center shield -->
+            <g transform="translate(172, 118)">
+              <path d="M28 4L6 10.5v14c0 14 22 25 22 25s22-11 22-25v-14L28 4z" fill="#0D1A2E" stroke="#2563EB" stroke-width="2"/>
+              <path d="M20 27.5l5.5 5.5 11-11" stroke="#06B6D4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <!-- Pulse rings -->
+            <circle cx="200" cy="170" r="50" stroke="#2563EB" stroke-width="0.75" opacity="0.25"/>
+            <circle cx="200" cy="170" r="75" stroke="#2563EB" stroke-width="0.5" opacity="0.12"/>
+
+            <!-- Connection lines from cameras to shield -->
+            <line x1="68" y1="56" x2="183" y2="140" stroke="#2563EB" stroke-width="0.75" opacity="0.35" stroke-dasharray="5 4"/>
+            <line x1="336" y1="56" x2="217" y2="140" stroke="#2563EB" stroke-width="0.75" opacity="0.35" stroke-dasharray="5 4"/>
+            <line x1="68" y1="280" x2="183" y2="200" stroke="#2563EB" stroke-width="0.75" opacity="0.35" stroke-dasharray="5 4"/>
+            <line x1="336" y1="280" x2="217" y2="200" stroke="#2563EB" stroke-width="0.75" opacity="0.35" stroke-dasharray="5 4"/>
+            <line x1="50" y1="170" x2="172" y2="170" stroke="#2563EB" stroke-width="0.75" opacity="0.35" stroke-dasharray="5 4"/>
+          </svg>
+        </div>
+
+      </div>
+
+      <a href="#why" class="hero-scroll-hint" aria-label="Scroll to learn more">
+        <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+          <rect x="1.5" y="1.5" width="19" height="31" rx="9.5" stroke="#94A3B8" stroke-width="1.5"/>
+          <circle class="scroll-dot" cx="11" cy="10" r="3" fill="#06B6D4"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ===================== WHY SPIRITEL ===================== -->
+    <section class="why-section section--light" id="why">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">The Spiritel Difference</div>
+          <h2>Security Built Around You,<br class="br-lg">Not Around Our Margins</h2>
+          <p class="section-sub">Most security companies lock you into proprietary hardware and their monitoring contracts. Spiritel's open model gives your business real flexibility — now and as you grow.</p>
+        </div>
+
+        <div class="cards-grid cards-grid--4">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="22" height="22" rx="5" stroke="#2563EB" stroke-width="1.5"/>
+                <path d="M7.5 13l4 4 7-7" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Open Hardware</h3>
+            <p>Use any camera or sensor brand you trust — Axis, Hanwha, Hikvision, Dahua, and more. We're completely brand-agnostic.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <circle cx="13" cy="11" r="5" stroke="#2563EB" stroke-width="1.5"/>
+                <path d="M4 23c0-5 4-8 9-8s9 3 9 8" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M19 7l3-1.5M19 11l3 1" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Your Monitoring Choice</h3>
+            <p>Keep your current security company or choose a new one. We don't dictate your monitoring provider — ever.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <path d="M13 2L2.5 6v7.5c0 7 10.5 12 10.5 12S24 20.5 24 13.5V6L13 2z" stroke="#2563EB" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9 13l3 3 5.5-5.5" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Professional Installs</h3>
+            <p>We connect you with vetted, licensed low-voltage installers near you. Quality work, accountability built in.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="9" height="9" rx="2" stroke="#2563EB" stroke-width="1.5"/>
+                <rect x="15" y="2" width="9" height="9" rx="2" stroke="#2563EB" stroke-width="1.5"/>
+                <rect x="2" y="15" width="9" height="9" rx="2" stroke="#2563EB" stroke-width="1.5"/>
+                <rect x="15" y="15" width="9" height="9" rx="2" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="3 2"/>
+              </svg>
+            </div>
+            <h3>Modular &amp; Scalable</h3>
+            <p>Start with what you need today. Add cameras, access control, or sensors anytime — no forklift upgrades required.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="steps-section section--dark" id="how-it-works">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <div class="section-label section-label--cyan">Simple Process</div>
+          <h2>Up and Running in Four Steps</h2>
+          <p class="section-sub">From your first conversation to a live, monitored system — we handle the complexity so you don't have to.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-number" aria-hidden="true">01</div>
+            <div class="step-content">
+              <h3>Tell Us About Your Site</h3>
+              <p>Share your location, business type, and what you're protecting — entry points, parking lots, fence lines, or all of the above.</p>
+            </div>
+          </div>
+
+          <div class="step-connector" aria-hidden="true"></div>
+
+          <div class="step reveal">
+            <div class="step-number" aria-hidden="true">02</div>
+            <div class="step-content">
+              <h3>We Design Your System</h3>
+              <p>We recommend the right mix of cameras, sensors, and access control — all open-standard, no proprietary hardware.</p>
+            </div>
+          </div>
+
+          <div class="step-connector" aria-hidden="true"></div>
+
+          <div class="step reveal">
+            <div class="step-number" aria-hidden="true">03</div>
+            <div class="step-content">
+              <h3>Get Matched With an Installer</h3>
+              <p>We connect you with a vetted, licensed low-voltage professional in your area. They handle everything on-site.</p>
+            </div>
+          </div>
+
+          <div class="step-connector" aria-hidden="true"></div>
+
+          <div class="step reveal">
+            <div class="step-number" aria-hidden="true">04</div>
+            <div class="step-content">
+              <h3>Activate &amp; Monitor</h3>
+              <p>Your system goes live. You choose your monitoring provider. We're here whenever you need changes or expansion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services-section section--light" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">What We Coordinate</div>
+          <h2>Complete Perimeter Security,<br class="br-lg">à la Carte</h2>
+          <p class="section-sub">Choose only the components your business needs. Mix and match — no minimum package, no bundled extras you didn't ask for.</p>
+        </div>
+
+        <div class="cards-grid cards-grid--3">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <rect x="2" y="6" width="14" height="11" rx="2" stroke="#2563EB" stroke-width="1.5"/>
+                <path d="M16 10.5l7-3.5v11l-7-3.5" stroke="#2563EB" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="9" cy="11.5" r="2.5" fill="#06B6D4" opacity="0.9"/>
+              </svg>
+            </div>
+            <h3>Outdoor Camera Coverage</h3>
+            <p>Perimeter surveillance designed for your lot, fence line, and entry points — clear coverage day and night.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <path d="M13 3c4.5 0 9 3.5 9 9" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M13 3c-4.5 0-9 3.5-9 9" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="13" cy="18" r="5" stroke="#2563EB" stroke-width="1.5"/>
+                <circle cx="13" cy="18" r="2" fill="#06B6D4"/>
+              </svg>
+            </div>
+            <h3>Motion &amp; Intrusion Detection</h3>
+            <p>Smart sensors alert before a breach becomes an incident. Configurable zones reduce false alarms.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <rect x="3" y="10" width="13" height="13" rx="2" stroke="#2563EB" stroke-width="1.5"/>
+                <path d="M9.5 10V8a4.5 4.5 0 0 1 9 0v3" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="9.5" cy="17" r="2" fill="#06B6D4"/>
+                <path d="M20 12h4M22 10v4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Gate &amp; Access Control</h3>
+            <p>Manage who enters your property with keypads, key fobs, or mobile credentials — fully integrated with cameras.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <rect x="2" y="4" width="22" height="15" rx="2" stroke="#2563EB" stroke-width="1.5"/>
+                <path d="M7 10h5M7 13h9M18 10h3" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M10 19v4M16 19v4M7 23h12" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Video Analytics</h3>
+            <p>License plate recognition, object detection, and intelligent alert filtering — catch what matters, ignore what doesn't.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <circle cx="13" cy="13" r="10" stroke="#2563EB" stroke-width="1.5"/>
+                <circle cx="13" cy="13" r="5" stroke="#06B6D4" stroke-width="1.5"/>
+                <circle cx="13" cy="13" r="2" fill="#06B6D4"/>
+                <path d="M13 3v2.5M13 20.5V23M3 13h2.5M20.5 13H23" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Remote Monitoring Integration</h3>
+            <p>We help you connect to any professional monitoring center — your choice, your contract, no bundled services.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="9" height="9" rx="1.5" stroke="#2563EB" stroke-width="1.5"/>
+                <rect x="15" y="2" width="9" height="9" rx="1.5" stroke="#2563EB" stroke-width="1.5"/>
+                <rect x="2" y="15" width="9" height="9" rx="1.5" stroke="#2563EB" stroke-width="1.5"/>
+                <path d="M17 19h6M20 16v6" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>System Expansion &amp; Upgrades</h3>
+            <p>Add cameras, sensors, or access points as your business grows — open hardware means you're never forced into a costly upgrade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRUST BAR ===================== -->
+    <section class="trust-section section--dark" id="trust" aria-label="By the numbers">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-stat reveal">
+            <span class="trust-number">50<span class="trust-plus">+</span></span>
+            <span class="trust-label">Installs Completed</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-stat reveal">
+            <span class="trust-number">100<span class="trust-plus">+</span></span>
+            <span class="trust-label">Businesses Served</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-stat reveal">
+            <span class="trust-number">Nationwide</span>
+            <span class="trust-label">Installer Network</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-stat reveal">
+            <span class="trust-number">Zero</span>
+            <span class="trust-label">Proprietary Lock-Ins</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUOTE FORM ===================== -->
+    <section class="quote-section section--dark" id="quote">
+      <div class="container">
+        <div class="quote-grid">
+
+          <div class="quote-copy">
+            <div class="section-label section-label--cyan">Get Started</div>
+            <h2>Request Your Free Quote</h2>
+            <p>Tell us about your business and what you're protecting. We'll respond within one business day with a tailored system recommendation and an installer match near you.</p>
+            <ul class="quote-benefits" role="list">
+              <li>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                  <circle cx="8.5" cy="8.5" r="7.5" stroke="#06B6D4" stroke-width="1.5"/>
+                  <path d="M5.5 8.5l2.5 2.5 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                No obligation, no sales pressure
+              </li>
+              <li>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                  <circle cx="8.5" cy="8.5" r="7.5" stroke="#06B6D4" stroke-width="1.5"/>
+                  <path d="M5.5 8.5l2.5 2.5 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Response within 1 business day
+              </li>
+              <li>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                  <circle cx="8.5" cy="8.5" r="7.5" stroke="#06B6D4" stroke-width="1.5"/>
+                  <path d="M5.5 8.5l2.5 2.5 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Tailored to your site and budget
+              </li>
+              <li>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                  <circle cx="8.5" cy="8.5" r="7.5" stroke="#06B6D4" stroke-width="1.5"/>
+                  <path d="M5.5 8.5l2.5 2.5 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Your info is never sold or shared
+              </li>
+            </ul>
+          </div>
+
+          <div class="quote-form-wrap">
+            <form
+              class="quote-form"
+              name="quote"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              novalidate
+              id="quote-form"
+            >
+              <input type="hidden" name="form-name" value="quote">
+              <p class="sr-only" aria-hidden="true">
+                <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+              </p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="f-name">Full Name <abbr title="required" aria-label="required">*</abbr></label>
+                  <input type="text" id="f-name" name="name" required autocomplete="name" placeholder="Jane Smith">
+                  <span class="field-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="f-business">Business Name <abbr title="required" aria-label="required">*</abbr></label>
+                  <input type="text" id="f-business" name="business" required autocomplete="organization" placeholder="Acme Warehousing">
+                  <span class="field-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="f-email">Email <abbr title="required" aria-label="required">*</abbr></label>
+                  <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="jane@acmeco.com">
+                  <span class="field-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="f-phone">Phone <span class="label-optional">(optional)</span></label>
+                  <input type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="(555) 000-0000">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="f-location">City &amp; State <abbr title="required" aria-label="required">*</abbr></label>
+                  <input type="text" id="f-location" name="location" required placeholder="Austin, TX">
+                  <span class="field-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="f-type">Business Type <abbr title="required" aria-label="required">*</abbr></label>
+                  <select id="f-type" name="business-type" required>
+                    <option value="" disabled selected>Select type…</option>
+                    <option value="retail">Retail</option>
+                    <option value="warehouse">Warehouse / Industrial</option>
+                    <option value="office">Office / Professional</option>
+                    <option value="restaurant">Restaurant / Hospitality</option>
+                    <option value="healthcare">Healthcare / Medical</option>
+                    <option value="construction">Construction / Contractor</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="field-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <fieldset class="form-group form-group--full">
+                <legend>What are you looking to protect? <abbr title="required" aria-label="required">*</abbr></legend>
+                <div class="checkbox-grid">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="protect" value="Parking Lot">
+                    <span>Parking Lot</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="protect" value="Entry Points">
+                    <span>Entry Points</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="protect" value="Fence Line">
+                    <span>Fence Line</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="protect" value="Interior Areas">
+                    <span>Interior Areas</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="protect" value="Gate / Access Control">
+                    <span>Gate / Access</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="protect" value="Other">
+                    <span>Other</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="form-group form-group--full">
+                <label for="f-message">Anything else we should know? <span class="label-optional">(optional)</span></label>
+                <textarea id="f-message" name="message" rows="3" placeholder="Square footage, existing equipment, number of locations, timeline…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn--full" id="form-submit">
+                <span class="btn-text">Send My Quote Request</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <p class="form-note">We'll be in touch within 1 business day. Your information is never sold or shared.</p>
+            </form>
+
+            <div class="form-success" id="form-success" role="alert" hidden>
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+                <circle cx="26" cy="26" r="24" stroke="#06B6D4" stroke-width="2"/>
+                <path d="M16 26l8 8 12-12" stroke="#06B6D4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3>Request Received!</h3>
+              <p>We'll reach out within 1 business day with your tailored quote and installer match.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="nav-logo footer-logo" aria-label="Spiritel — back to top">
+        <svg class="logo-icon" width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M14 2L3 6.5v8c0 7.5 11 13 11 13s11-5.5 11-13v-8L14 2z" stroke="#06B6D4" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M9.5 14l3 3 6-6" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">SPIRITEL</span>
+      </a>
+
+      <p class="footer-tagline">Your Perimeter. Your Rules.</p>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#why">Why Spiritel</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#services">Services</a>
+        <a href="#quote">Get a Quote</a>
+      </nav>
+
+      <p class="footer-copy">
+        &copy; 2026 Spiritel. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="#" class="footer-link">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

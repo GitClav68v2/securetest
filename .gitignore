@@ -1,0 +1,59 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+
+# macOS temporary files
+*.swp
+*.lock
+.DS_Store?
+Icon?
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js / npm / build tools (if you add Vite, React, etc. later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json    # optional: remove if you want to commit lockfile
+yarn.lock            # optional: remove if using npm instead
+
+# Build & dist folders
+dist/
+build/
+out/
+coverage/
+.next/
+.vercel/
+
+# Logs & temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Claude / AI tool artifacts (optional, if they generate junk)
+.claude/
+claude.log
+
+# Environment & secrets (never commit these)
+.env
+.env.local
+.env.development
+.env.production
+.env*.local
+
+# Misc
+*.bak
+*.orig
