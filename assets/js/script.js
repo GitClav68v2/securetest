@@ -177,10 +177,9 @@
 
       const formData = new FormData(form);
 
-      fetch('/', {
+      fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
+        body: formData,
       })
         .then(function (res) {
           if (res.ok) {
