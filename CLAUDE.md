@@ -1,58 +1,52 @@
-# CLAUDE.md – Spiritel Project Instructions
+# CLAUDE.md – Integration One Project Instructions
 
-Always read this entire file first in every session.  
-Current date reference: Note today's date at the top of responses.
+Always read this entire file first in every session.
 
 ## Core Rules & Behavior
 1. Start in **PLAN MODE** unless I explicitly say "implement now" or "skip planning".
-2. Document everything in the docs/ folder:
-   - Plans → docs/plan.md or docs/plan-[YYYYMMDD].md
-   - Specs/UI decisions → docs/spec.md
-   - Notes/Q&A → docs/notes.md
-3. Interview me on unclear items with numbered questions (AskUserQuestion style):
-   - UI/UX, colors/fonts, logo, mobile priority, accessibility
-   - Edge cases, performance, future scalability
-   - Anything ambiguous about features or copy
-4. **Strong preference**: Client-side/static implementation (HTML/CSS/JS, later Vite/React if needed).
+2. Interview on unclear items with numbered questions: UI/UX, colors/fonts, copy, accessibility, edge cases.
+3. **Strong preference**: Client-side/static implementation (HTML/CSS/JS).
    - Only suggest server/Edge Functions if sensitive data appears → discuss tradeoffs first.
-5. Suggest improvements: simpler UX, better accessibility, faster load, more trustworthy/security feel.
-6. Validation loop:
-   - Summarize plan → ask for approval
-   - After code: local test instructions + git commit message example
-   - Remind to commit often with clear messages
-7. Keep responses focused: headings, bullets, code blocks — no walls of text.
+4. Suggest improvements: simpler UX, better accessibility, faster load, more trustworthy/security feel.
+5. After code: summarize what was done and what needs manual review.
+6. Keep responses focused: headings, bullets, code blocks — no walls of text.
 
 ## Project Overview
-Company: Spiritel  
-Target: Small/medium businesses (SMBs)  
-Product: Perimeter security solutions  
-Model: Open / à la carte / modular / no proprietary lock-in  
-- Customers choose their own cameras, sensors, access control hardware
-- Customers choose their own monitoring / security company
-- Spiritel coordinates professional installation via vetted low-voltage distributors & installers (we feed jobs to them)
+Company: Integration One (formerly Spiritel)
+Domain: integrationone.net (Cloudflare — worker named "securetest")
+GitHub: GitClav68v2
+Target: Small/medium businesses (SMBs)
+Product: Perimeter security solutions — cameras, sensors, access control
+Model: Open / à la carte / modular / no proprietary lock-in
+- Customers choose their own hardware and monitoring company
+- Integration One coordinates professional installation via vetted low-voltage installers
 - Goal: Make high-quality perimeter security easy, affordable, and flexible for SMBs
 
-MVP: Modern, responsive single-page lead-generation website  
-Inspiration layout: https://www.startechgrp.com/ (clean, professional, service-focused)
+Contact:
+- info@integrationone.net
+- sales@integrationone.net
+- Phone: 800-555-1212 (placeholder — needs real number)
 
-Key sections to include:
-- Hero + strong tagline + CTAs ("Get Quote", "Build Your System")
-- Why Spiritel / No Lock-In explanation
-- How It Works (3–5 steps)
-- Modular Services / Options overview
-- Simple quote/contact form
+## Current Site Status
+- Live at integrationone.net and www.integrationone.net
+- Plain HTML/CSS/JS static site (no build step)
+- Deployed via Cloudflare Workers (worker: securetest)
+- Form handled by Web3Forms
+
+## Sections Live
+- Hero, Why Integration One, How It Works, Services, Industries Served, FAQ, Quote Form, Footer
+- Privacy policy page: privacy.html
+
+## Pending Improvements
+- Replace placeholder phone number with real number
+- Add trust/stats bar (years in business, installs, states served)
+- Display contractor license number
+- Set up Google Workspace email (info@ and sales@)
+- Cancel Netlify subscription
 
 ## Folder & File References
-- README.md → high-level overview for humans
-- docs/ → plans, specs, notes (create if missing)
 - index.html → main entry point
+- privacy.html → privacy policy
 - assets/css/style.css → main styles
-- assets/js/script.js → interactivity (if any)
-- assets/images/ → logos, icons, placeholders
-
-## Starter Prompt Template (use this to start sessions)
-Read CLAUDE.md first. Use plan mode.  
-I want to [describe next task, e.g. build the homepage].  
-Plan it, document spec in docs/, ask numbered questions on unclear items (UI/UX, colors, copy, etc.).  
-Suggest improvements. Prefer client-side/static unless sensitive data appears (discuss if so).  
-Do not implement code until I approve the plan.
+- assets/js/script.js → interactivity
+- assets/images/ → logos, icons (favicon.svg lives here)

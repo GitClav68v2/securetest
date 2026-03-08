@@ -1076,6 +1076,19 @@ textarea { resize: vertical; min-height: 90px; }
 
 .nav-contact-link:hover { color: #06B6D4; }
 
+.nav-phone {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #CBD5E1 !important;
+  letter-spacing: 0.02em;
+}
+
+.nav-emails {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 .footer-contact {
   display: flex;
   align-items: center;
