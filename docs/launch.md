@@ -20,35 +20,31 @@
 - [ ] 3.1 Cancel Netlify subscription
 - [ ] 3.2 Update Web3Forms account name from "Infospiritel" to "Integration One"
 
-## 4. Customer Portal (Phase 2 — Planned)
-**Stack:** Supabase (auth + database + file storage) + Stripe (payments) + Vercel (hosting)
-**Status:** Architecture design phase
+## 4. Customer Portal
+**Stack:** Supabase + Stripe + Vercel
+**Live at:** portal.integrationone.net
+**Repo:** GitClav68v2/integration-one-portal
 
-### 4.1 Architecture & Setup
-- [ ] 4.1.1 Create Supabase project
-- [ ] 4.1.2 Design database schema (customers, invoices, payments)
-- [ ] 4.1.3 Set up Supabase storage bucket for PDF invoices
-- [ ] 4.1.4 Create Vercel project and link to GitHub
+### 4.1–4.4 Core Portal ✅ Complete
+- [x] 4.1.1 Supabase project created
+- [x] 4.1.2 Database schema (customers, invoices tables with RLS)
+- [x] 4.1.3 Supabase storage bucket for PDF invoices
+- [x] 4.1.4 Vercel project deployed + custom domain
+- [x] 4.2.1 Customer login — email/password + Google OAuth
+- [x] 4.2.2 Admin login — dcclav@gmail.com routes to admin panel
+- [x] 4.2.3 Row Level Security — customers only see their own data
+- [x] 4.3.1 Login page
+- [x] 4.3.2 Customer dashboard — invoice list with status badges
+- [x] 4.3.3 Invoice detail — PDF download via signed URL
+- [x] 4.4.1 Admin dashboard — list all customers with invoice counts
+- [x] 4.4.2 Admin customer page — add invoices + upload PDFs
+- [x] 4.5.1 "Client Login" link added to integrationone.net nav
 
-### 4.2 Authentication
-- [ ] 4.2.1 Customer login — email/password + Google OAuth
-- [ ] 4.2.2 Admin login — separate role for team members
-- [ ] 4.2.3 Row Level Security — customers only see their own invoices
-
-### 4.3 Customer-Facing Portal
-- [ ] 4.3.1 Login page
-- [ ] 4.3.2 Customer dashboard — list of invoices (date, amount, status)
-- [ ] 4.3.3 Invoice detail — PDF viewer/download
-- [ ] 4.3.4 Payment flow via Stripe (pay outstanding invoice online)
-
-### 4.4 Admin Panel
-- [ ] 4.4.1 Admin dashboard — list all customers
-- [ ] 4.4.2 Upload PDF invoice and assign to customer
-- [ ] 4.4.3 Mark invoice as paid / track payment status
-
-### 4.5 Integration
-- [ ] 4.5.1 Link "Customer Login" from integrationone.net nav
-- [ ] 4.5.2 Email notification to customer when new invoice is uploaded
+### 4.5 Remaining Portal Tasks
+- [ ] 4.5.2 Add Customer form (+ Add Customer button needs a page)
+- [ ] 4.5.3 Email notification to customer when new invoice is uploaded (Resend)
+- [ ] 4.5.4 Set up Supabase Auth redirect URLs for portal.integrationone.net
+- [ ] 4.5.5 Stripe payment integration (pay invoice online)
 
 ## 5. Future Enhancements
 - [ ] 5.1 Add Google Analytics or similar
@@ -64,3 +60,5 @@
 - [x] Web3Forms CC to paul + garrett
 - [x] Google Workspace email for integrationone.net (DKIM authenticated)
 - [x] info@ shared inbox with full team
+- [x] Customer portal live at portal.integrationone.net
+- [x] "Client Login" link in integrationone.net nav

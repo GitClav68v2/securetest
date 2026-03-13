@@ -24,13 +24,6 @@ Run a task by saying "run [#]" — Claude will execute it using the prompt below
 
 ---
 
-## 4. Customer Portal
-
-**run 4.1.1** — Start customer portal architecture
-> We are building a customer portal for Integration One. Stack: Supabase (auth + database + PDF storage) + Stripe (payments) + Vercel (hosting). Start by interviewing me on any remaining open questions, then produce a full architecture document saved to docs/portal-architecture.md. Cover: database schema, auth flow, admin vs customer roles, file storage structure, Stripe payment flow, and how the portal connects to integrationone.net.
-
----
-
 ## 3. Housekeeping
 
 **run 3.1** — Cancel Netlify
@@ -38,3 +31,19 @@ Run a task by saying "run [#]" — Claude will execute it using the prompt below
 
 **run 3.2** — Rename Web3Forms
 > Log into web3forms.com, find the "Infospiritel" form, rename it to "Integration One".
+
+---
+
+## 4. Customer Portal
+
+**run 4.5.2** — Add Customer form
+> In the portal project (/Volumes/iMac RAID/Claude/Integration One Portal), build the Add Customer page at src/pages/AdminNewCustomer.jsx. It should have a form with fields: business_name, contact_name, email, phone, account_number (auto-suggest next IO-XXXX). On submit, insert into Supabase customers table and redirect to /admin. Wire the "+ Add Customer" button in AdminDashboard.jsx to navigate to /admin/customers/new.
+
+**run 4.5.3** — Email notifications via Resend
+> Set up email notifications using Resend so that when an admin uploads an invoice PDF for a customer, the customer receives an email with their invoice details and a link to portal.integrationone.net. Use a Supabase Edge Function triggered on invoice insert/update.
+
+**run 4.5.4** — Set Supabase Auth redirect URLs
+> In Supabase Auth settings, add portal.integrationone.net to the allowed redirect URLs so that password reset and magic link emails work correctly on the live domain (not just localhost).
+
+**run 4.5.5** — Stripe payment integration
+> Integrate Stripe into the portal so customers can pay invoices online. Use Stripe Checkout for full or partial payments. Create a Supabase Edge Function to generate a Stripe Checkout session. Update Invoice.jsx to show a "Pay Now" button that calls the edge function. On success, update invoice status and amount_paid in the database.
