@@ -1081,6 +1081,7 @@ textarea { resize: vertical; min-height: 90px; }
   font-weight: 600;
   color: #CBD5E1 !important;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .nav-emails {
