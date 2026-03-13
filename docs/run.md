@@ -24,6 +24,13 @@ Run a task by saying "run [#]" — Claude will execute it using the prompt below
 
 ---
 
+## 4. Customer Portal
+
+**run 4.1.1** — Start customer portal architecture
+> We are building a customer portal for Integration One. Stack: Supabase (auth + database + PDF storage) + Stripe (payments) + Vercel (hosting). Start by interviewing me on any remaining open questions, then produce a full architecture document saved to docs/portal-architecture.md. Cover: database schema, auth flow, admin vs customer roles, file storage structure, Stripe payment flow, and how the portal connects to integrationone.net.
+
+---
+
 ## 3. Housekeeping
 
 **run 3.1** — Cancel Netlify
