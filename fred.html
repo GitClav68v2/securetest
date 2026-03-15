@@ -73,34 +73,36 @@
     <video class="fred-video"
       src="assets/images/fred-video.mp4"
       loop
+      muted
       playsinline
       id="fredVid">
     </video>
   </div>
 
+  <audio src="assets/images/fred-audio.mp3" id="fredAudio"></audio>
   <button class="unmute-btn" id="unmuteBtn">🔊 TAP FOR SOUND</button>
 
   <script>
     const vid = document.getElementById('fredVid');
+    const audio = document.getElementById('fredAudio');
     const btn = document.getElementById('unmuteBtn');
 
-    // Try to autoplay with sound — browsers may allow it based on engagement
-    vid.muted = false;
-    vid.play().then(() => {
-      btn.classList.add('hidden'); // Sound playing — hide the button
+    vid.play();
+
+    // Try to autoplay the MP3
+    audio.play().then(() => {
+      btn.classList.add('hidden');
     }).catch(() => {
-      // Browser blocked it — fall back to muted autoplay
-      vid.muted = true;
-      vid.play();
+      // Browser blocked it — wait for tap
     });
 
     btn.addEventListener('click', () => {
-      vid.muted = false;
+      audio.play();
       btn.classList.add('hidden');
     });
 
     vid.addEventListener('click', () => {
-      vid.muted = false;
+      audio.play();
       btn.classList.add('hidden');
     });
   </script>
