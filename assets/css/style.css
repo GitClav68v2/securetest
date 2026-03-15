@@ -1125,8 +1125,21 @@ textarea { resize: vertical; min-height: 90px; }
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-.logo-spin {
-  animation: logo-spin 8s linear infinite;
+.logo-wrap {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.lens-spin-wrap {
+  position: absolute;
+  top: 108px;
+  left: 64px;
+  transform: translate(-50%, -50%);
+}
+.lens-spin {
+  width: 36px;
+  height: 36px;
+  animation: logo-spin 4s linear infinite;
 }
 
 .nav-emails {
