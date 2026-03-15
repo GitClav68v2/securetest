@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Francisco Chronicle</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .page {
+      position: relative;
+      /* The Chronicle image is 672×412 — maintain that ratio */
+      width: min(100vw, calc(100vh * 672 / 412));
+      height: min(100vh, calc(100vw * 412 / 672));
+    }
+
+    .chronicle-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: fill;
+    }
+
+    /* Video overlaid exactly where Fred's photo is in the Chronicle */
+    .fred-video {
+      position: absolute;
+      /* Tuned to the photo cutout in the 672×412 image */
+      left: 34%;
+      top: 57%;
+      width: 25%;
+      height: 44%;
+      object-fit: cover;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <img class="chronicle-img" src="assets/images/fred-chronicle.jpg" alt="San Francisco Chronicle">
+    <video class="fred-video"
+      src="assets/images/fred-video.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+      id="fredVid">
+    </video>
+  </div>
+
+  <script>
+    // Click video to toggle sound
+    const vid = document.getElementById('fredVid');
+    vid.addEventListener('click', () => {
+      vid.muted = !vid.muted;
+    });
+  </script>
+
+</body>
+</html>
