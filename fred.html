@@ -32,6 +32,26 @@
       object-fit: fill;
     }
 
+    .unmute-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: hotpink;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      z-index: 10;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+      letter-spacing: 1px;
+    }
+    .unmute-btn:hover { background: #ff69b4; }
+    .unmute-btn.hidden { display: none; }
+
     /* Video overlaid exactly where Fred's photo is in the Chronicle */
     .fred-video {
       position: absolute;
@@ -60,11 +80,20 @@
     </video>
   </div>
 
+  <button class="unmute-btn" id="unmuteBtn">🔊 TAP FOR SOUND</button>
+
   <script>
-    // Click video to toggle sound
     const vid = document.getElementById('fredVid');
+    const btn = document.getElementById('unmuteBtn');
+
+    btn.addEventListener('click', () => {
+      vid.muted = false;
+      btn.classList.add('hidden');
+    });
+
     vid.addEventListener('click', () => {
-      vid.muted = !vid.muted;
+      vid.muted = false;
+      btn.classList.add('hidden');
     });
   </script>
 
