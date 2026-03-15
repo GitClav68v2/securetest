@@ -72,9 +72,7 @@
     <img class="chronicle-img" src="assets/images/fred-chronicle.jpg" alt="San Francisco Chronicle">
     <video class="fred-video"
       src="assets/images/fred-video.mp4"
-      autoplay
       loop
-      muted
       playsinline
       id="fredVid">
     </video>
@@ -85,6 +83,16 @@
   <script>
     const vid = document.getElementById('fredVid');
     const btn = document.getElementById('unmuteBtn');
+
+    // Try to autoplay with sound — browsers may allow it based on engagement
+    vid.muted = false;
+    vid.play().then(() => {
+      btn.classList.add('hidden'); // Sound playing — hide the button
+    }).catch(() => {
+      // Browser blocked it — fall back to muted autoplay
+      vid.muted = true;
+      vid.play();
+    });
 
     btn.addEventListener('click', () => {
       vid.muted = false;
