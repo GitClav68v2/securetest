@@ -1121,25 +1121,20 @@ textarea { resize: vertical; min-height: 90px; }
   white-space: nowrap;
 }
 
-@keyframes logo-spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-.logo-wrap {
+.logo-video-wrap {
   position: relative;
-  display: inline-block;
+  height: 144px;
   flex-shrink: 0;
 }
-.lens-spin-wrap {
+.nav-vid {
   position: absolute;
-  top: 108px;
-  left: 64px;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  height: 144px;
+  transition: opacity 0.5s ease;
 }
-.lens-spin {
-  width: 36px;
-  height: 36px;
-  animation: logo-spin 4s linear infinite;
+.nav-vid--b {
+  opacity: 0;
 }
 
 .nav-emails {

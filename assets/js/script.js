@@ -216,4 +216,29 @@
     });
   }
 
+  // ── Seamless logo video crossfade loop ────────────────────
+  const vidA = document.querySelector('.nav-vid--a');
+  const vidB = document.querySelector('.nav-vid--b');
+  if (vidA && vidB) {
+    const FADE = 0.5; // seconds before end to start crossfade
+    let active = vidA, inactive = vidB;
+
+    function crossfade() {
+      if (!active.duration) return;
+      if (active.currentTime >= active.duration - FADE) {
+        inactive.currentTime = 0;
+        inactive.play();
+        inactive.style.opacity = '1';
+        active.style.opacity  = '0';
+        const prev = active;
+        active   = inactive;
+        inactive = prev;
+      }
+    }
+
+    vidA.addEventListener('canplay', () => vidA.play(), { once: true });
+    vidA.addEventListener('timeupdate', crossfade);
+    vidB.addEventListener('timeupdate', crossfade);
+  }
+
 })();
